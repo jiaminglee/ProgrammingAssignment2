@@ -1,5 +1,4 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Put comments here that give an overall description of what your functions do
 
 ## Write a short comment describing this function
 
@@ -26,6 +25,7 @@ makeCacheMatrix <- function(x = matrix()) {
 
 
 ## Write a short comment describing this function
+
 # The cacheSolve function returns the inverse of matrix 
 # Function will check for the inverse to see if it has already been computed
 # Function will return the results if computed
@@ -46,3 +46,21 @@ cacheSolve <- function(x, ...) {
   x$setinverse(i)
   i
 }
+
+## start example of funtion with results
+## x = rbind(c(1, -2), c(-2, 1))
+## m = makeCacheMatrix(x)
+## m$get()
+## [,1] [,2]
+## [1,]    1   -2
+## [2,]   -2    1
+## cacheSolve(m)
+## [,1]       [,2]
+## [1,] -0.3333333 -0.6666667
+## [2,] -0.6666667 -0.3333333
+## cacheSolve(m)
+## getting cached data
+## [,1]       [,2]
+## [1,] -0.3333333 -0.6666667
+## [2,] -0.6666667 -0.3333333
+## end example
